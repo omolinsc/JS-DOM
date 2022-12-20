@@ -61,6 +61,7 @@ const selectDivs$$ = document.getElementsByTagName("div");
 const newP$$ = document.createElement("p");
 newP$$.textContent = ("Voy en medio!");
 selectDivs$$[1].appendChild(newP$$);
+// document.body.insertBefore(newP$$,selectDivs$$);
 console.log(newP$$);                //! No sé cómo funciona ni hacerlo sin appendChild
 
 //* 2.9 Inserta p con el texto 'Voy dentro!', dentro de todos los div con la clase .fn-insert-here
@@ -74,3 +75,4 @@ selectDivsByClass$$[i].appendChild(pInside$$);
 
 
 console.log(selectDivsByClass$$.length);   //! Me lo pone en un div pero no en el otro
+
